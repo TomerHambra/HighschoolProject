@@ -7,7 +7,7 @@ class RandomPlayer(Client):
         super().__init__()
         self.empty_cells_list = []
 
-    def choose_move(self, game_state):
+    def choose_move(self, game_state, sign):
         self.update_empty_cells(game_state)
         return tuple(random.choice(self.empty_cells_list)) if len(self.empty_cells_list) else (-1, -1)
 

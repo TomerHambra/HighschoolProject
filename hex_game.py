@@ -46,7 +46,7 @@ class Game:
 
     def do_move(self, sign):  # DONE
         player = self.red if (sign+1) else self.blue
-        y, x = player.choose_move(self.board)
+        y, x = player.choose_move(self.board, sign)
         if y == -1:
             return 2  # tie
         self.last_move = (y, x)

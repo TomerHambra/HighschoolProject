@@ -3,9 +3,11 @@ from hex_collections import print_boards_list
 
 
 def main():
-    engine = Games()
+    # engine = Games()
     # engine.run_simulations(1_000_000)
-    print_boards_list(reversed(engine.run_game()))
+    # print_boards_list(reversed(engine.run_game()))
+
+    game_with_megatron = Games()
 
 
 if __name__ == "__main__":
